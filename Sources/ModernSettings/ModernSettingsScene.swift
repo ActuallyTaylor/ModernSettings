@@ -12,7 +12,7 @@ import SwiftUI
 /// To use in your app, create a `ModernSettings()` sub-scene within your `@main` app. 
 /// ```
 ///     @main
-///     struct TextEdit: App {
+///     struct TextEditor: App {
 ///         var body: some Scene {
 ///             ModernSettings() {
 ///                 SettingsController()
