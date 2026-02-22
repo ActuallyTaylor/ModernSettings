@@ -18,6 +18,6 @@ let package = Package(
         .target(name: "ModernSettings", resources: [
             .process("Resources/Localizable.xcstrings", localization: .default)
         ]),
-        .executableTarget(name: "LocalizedSettingsNameGenerator")
+        .executableTarget(name: "LocalizedSettingsNameGenerator", path: "Sources/Tools")
     ]
 )

@@ -7,6 +7,23 @@
 
 import SwiftUI
 
+/// A SwiftUI settings scene that creates a more Modern Settings Window.
+///
+/// To use in your app, create a `ModernSettings()` sub-scene within your `@main` app. 
+/// ```
+///     @main
+///     struct TextEdit: App {
+///         var body: some Scene {
+///             ModernSettings() {
+///                 SettingsController()
+///             }
+///             .settingsShortcut(",", [.command, .shift])
+///         }
+///     }
+/// ```
+///
+///
+///
 public struct ModernSettings<Content: View>: Scene {
     @Environment(\.openWindow) var openWindow
     @Environment(\.openModernSettings) var openSettings
@@ -24,8 +41,9 @@ public struct ModernSettings<Content: View>: Scene {
     public var body: some Scene {
         Window(SceneID.settings.title, id: SceneID.settings.id) {
             content()
+                .toolbarTitleDisplayMode(.inlineLarge)
         }
-        .defaultSize(width: 650, height: 400)
+        .defaultSize(width: 790, height: 500)
         .defaultPosition(.center)
         .restorationBehavior(.disabled)
         .commands {

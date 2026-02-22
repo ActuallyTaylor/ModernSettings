@@ -26,7 +26,7 @@ extension NSSplitViewItem {
         method_exchangeImplementations(originalMethod, customMethod)
         
         hasSwizzled = true
-        print("Successfully Swizzled NSSplitView.canCollapse!")
+        print("[ModernSettings] Successfully Swizzled NSSplitView.canCollapse!")
     }
     
     @MainActor @preconcurrency
