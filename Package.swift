@@ -5,14 +5,19 @@ import PackageDescription
 
 let package = Package(
     name: "ModernSettings",
+    defaultLocalization: "en",
     platforms: [
         .macOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(name: "ModernSettings", targets: ["ModernSettings"]),
+        .executable(name: "LocalizedSettingsNameGenerator", targets: ["LocalizedSettingsNameGenerator"])
     ],
     targets: [
-        .target(name: "ModernSettings", dependencies: [])
+        .target(name: "ModernSettings", resources: [
+            .process("Resources/Localizable.xcstrings", localization: .default)
+        ]),
+        .executableTarget(name: "LocalizedSettingsNameGenerator")
     ]
 )

@@ -27,10 +27,10 @@ public struct ModernSettings<Content: View>: Scene {
         }
         .defaultSize(width: 650, height: 400)
         .defaultPosition(.center)
-        .keyboardShortcut(configuration.openSettingsShortcut, modifiers: configuration.openSettingsModifiers)
+        .restorationBehavior(.disabled)
         .commands {
             CommandGroup(replacing: .appSettings) {
-                Button("Settings...") {
+                Button(LocalizedStringResource.settings) {
                     openSettings()
                 }
                 .keyboardShortcut(configuration.openSettingsShortcut, modifiers: configuration.openSettingsModifiers)
@@ -42,3 +42,4 @@ public struct ModernSettings<Content: View>: Scene {
         }
     }
 }
+
