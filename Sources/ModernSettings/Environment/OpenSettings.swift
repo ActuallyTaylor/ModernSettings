@@ -27,6 +27,21 @@ public struct OpenModernSettingsAction {
 
 
 public extension EnvironmentValues {
-    /// The environment value for modifiers to update the configurations.
+    /// Use the `openModernSettings` environment value to get an instance of ``OpenModernSettingsAction``.
+    /// Calling this structure will open a new ``ModernSettings>`` window if one does not already exist. If one does exist,
+    /// the existing one will be focused.
+    ///
+    /// For example, you can create a button that will open your app's settings.
+    /// ```
+    ///     struct OpenSettingsButton: View {
+    ///         @Environment(\.openModernSettings) private var openModernSettings
+    ///
+    ///         var body: some View {
+    ///             Button("Open App Settings") {
+    ///                 openModernSettings()
+    ///             }
+    ///         }
+    ///     }
+    /// ```
     @Entry var openModernSettings: OpenModernSettingsAction = OpenModernSettingsAction()
 }

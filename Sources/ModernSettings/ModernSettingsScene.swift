@@ -17,13 +17,9 @@ import SwiftUI
 ///             ModernSettings() {
 ///                 SettingsController()
 ///             }
-///             .settingsShortcut(",", [.command, .shift])
 ///         }
 ///     }
 /// ```
-///
-///
-///
 public struct ModernSettings<Content: View>: Scene {
     @Environment(\.openWindow) var openWindow
     @Environment(\.openModernSettings) var openSettings
