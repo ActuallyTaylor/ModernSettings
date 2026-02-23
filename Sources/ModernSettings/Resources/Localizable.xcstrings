@@ -198,8 +198,8 @@
         },
         "sl" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Nastavitve …"
+            "state" : "translated",
+            "value" : "Nastavitve…"
           }
         },
         "sv" : {

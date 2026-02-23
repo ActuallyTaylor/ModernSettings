@@ -4,6 +4,12 @@ A SwiftUI package that brings a more modern settings window to macOS. The curren
 
 ![Sample Modern Settings Window](Resources/sample_settings.png)
 
+## Localization
+
+This package includes localization for 40 languages, this localization is used for the "Settings…" button that appears in your app's menu bar.
+
+> This is the same level of localization that is available from the default SwiftUI Settings Window.
+
 ## Sample Code
 
 To create a Modern Settings window, use the `ModernSettings` scene within your Main App. Within your Settings view, use a `NavigationSplitView` with a locked sidebar. To lock the sidebar, use the `lockSidebar` modifier on the main view within your sidebar.
