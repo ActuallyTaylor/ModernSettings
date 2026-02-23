@@ -7,7 +7,6 @@ let package = Package(
     name: "ModernSettings",
     defaultLocalization: "en",
     platforms: [
-        .macOS(.v15),
         .macOS(.v26)
     ],
     products: [
@@ -19,6 +18,6 @@ let package = Package(
         .target(name: "ModernSettings", resources: [
             .process("Resources/Localizable.xcstrings", localization: .default)
         ]),
-        .executableTarget(name: "LocalizedSettingsNameGenerator", path: "Sources/Tools")
+        .executableTarget(name: "LocalizedSettingsNameGenerator", path: "Sources/Tools"),
     ]
 )

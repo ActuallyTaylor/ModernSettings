@@ -39,6 +39,7 @@ extension NSSplitViewItem {
         return self.customCanCollapse
     }
     
+    
     /// Swizzles `NSplitView:canCollapse` to prevent collapsing in the custom settings window.
     @MainActor @preconcurrency
     static func swizzle() {
