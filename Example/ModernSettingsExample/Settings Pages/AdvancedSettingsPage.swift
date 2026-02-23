@@ -16,5 +16,6 @@ struct AdvancedSettingsPage: View {
             Toggle("Advanced Setting", isOn: $sampleSetting)
         }
         .formStyle(.grouped)
+        .navigationTitle("Advanced")
     }
 }

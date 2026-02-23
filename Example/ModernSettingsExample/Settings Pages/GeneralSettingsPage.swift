@@ -19,5 +19,6 @@ struct GeneralSettingsPage: View {
             }
         }
         .formStyle(.grouped)
+        .navigationTitle("General")
     }
 }

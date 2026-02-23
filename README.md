@@ -53,6 +53,8 @@ struct SettingsController: View {
 
 Modern macOS settings prevent the `NavigationSplitView's` sidebar from being collapsed. This is seemingly done through a private API. To get around this, ModernSettings uses a modifier, `lockSidebar` within the `NavigationSplitView`. This removes the toggle button and locking the width. To prevent the drag gesture on the sidebar, `NSplitView:canCollapse` is swizzled by the `ModernSettings` scene. This swizzling stops the sidebar from being collapse through any methods, which matches the behavior in Settings & Xcode.
 
+![Sample Modern Settings Window](Resources/sample_settings.png)
+
 ### Open Settings Window Programmatically
 
 Like the built in SwiftUI `Settings` window, `ModernSettings` supports programmatic opening of the window. This can be accomplished using the `openModernSettings` environment variable: 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB45D4C02F4BD99F00C8584C /* ModernSettings in Frameworks */ = {isa = PBXBuildFile; productRef = DB45D4BF2F4BD99F00C8584C /* ModernSettings */; };
+		DB45D4EC2F4BDE7500C8584C /* ModernSettings in Frameworks */ = {isa = PBXBuildFile; productRef = DB45D4EB2F4BDE7500C8584C /* ModernSettings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB45D4C02F4BD99F00C8584C /* ModernSettings in Frameworks */,
+				DB45D4EC2F4BDE7500C8584C /* ModernSettings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			);
 			name = ModernSettingsExample;
 			packageProductDependencies = (
-				DB45D4BF2F4BD99F00C8584C /* ModernSettings */,
+				DB45D4EB2F4BDE7500C8584C /* ModernSettings */,
 			);
 			productName = ModernSettingsExample;
 			productReference = DB45D4A22F4BD91000C8584C /* ModernSettingsExample.app */;
@@ -109,7 +109,7 @@
 			mainGroup = DB45D4992F4BD91000C8584C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DB45D4B32F4BD95500C8584C /* XCLocalSwiftPackageReference "../../../ModernSettings" */,
+				DB45D4EA2F4BDE7500C8584C /* XCLocalSwiftPackageReference "../../ModernSettings" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DB45D4A32F4BD91000C8584C /* Products */;
@@ -344,16 +344,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		DB45D4B32F4BD95500C8584C /* XCLocalSwiftPackageReference "../../../ModernSettings" */ = {
+		DB45D4EA2F4BDE7500C8584C /* XCLocalSwiftPackageReference "../../ModernSettings" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../ModernSettings;
+			relativePath = ../../ModernSettings;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DB45D4BF2F4BD99F00C8584C /* ModernSettings */ = {
+		DB45D4EB2F4BDE7500C8584C /* ModernSettings */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DB45D4B32F4BD95500C8584C /* XCLocalSwiftPackageReference "../../../ModernSettings" */;
 			productName = ModernSettings;
 		};
 /* End XCSwiftPackageProductDependency section */
