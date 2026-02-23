@@ -8,7 +8,8 @@ A SwiftUI package that brings a more modern settings window to macOS. The curren
 
 This package includes localization for 40 languages, this localization is used for the "Settings…" button that appears in your app's menu bar.
 
-> This is the same level of localization that is available from the default SwiftUI Settings Window. See  `Sources/Tools/LocalizedSettingsNameGenerator` for the generation code for localization.
+> This is the same level of localization that is available from the default SwiftUI Settings Window. 
+> See  `Sources/Tools/LocalizedSettingsNameGenerator` for the generation code for localization.
 
 ## Sample Code
 
