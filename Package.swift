@@ -11,11 +11,11 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(name: "ModernSettings", targets: ["ModernSettings"]),
+        .library(name: "ModernSettingsWindow", targets: ["ModernSettingsWindow"]),
         .executable(name: "LocalizedSettingsNameGenerator", targets: ["LocalizedSettingsNameGenerator"])
     ],
     targets: [
-        .target(name: "ModernSettings", resources: [
+        .target(name: "ModernSettingsWindow", resources: [
             .process("Resources/Localizable.xcstrings", localization: .default)
         ]),
         .executableTarget(name: "LocalizedSettingsNameGenerator", path: "Sources/Tools"),
