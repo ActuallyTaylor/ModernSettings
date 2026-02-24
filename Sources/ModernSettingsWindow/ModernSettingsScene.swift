@@ -35,7 +35,7 @@ public struct ModernSettings<Content: View>: Scene {
     }
     
     public var body: some Scene {
-        Window(SceneID.settings.title, id: SceneID.settings.id) {
+        Window(LocalizedStringResource.settingsTitle, id: SceneID.settings.id) {
             content()
                 .toolbarTitleDisplayMode(.inlineLarge)
         }
